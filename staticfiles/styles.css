@@ -1,0 +1,115 @@
+body {
+    background: url('background.jpg') no-repeat center fixed;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-size: cover;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1000px; /* Adjust as needed */
+}
+
+.logincontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-size: cover;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height:100%;
+    max-width: 1000px; /* Adjust as needed */
+}
+.image-container {
+    flex: 1;
+    margin-right: 20px; /* Adjust spacing between image and form */
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.form-container {
+    flex: 2;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    margin-top: 0;
+    padding-top: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+label {
+    display: block;
+    margin: 15px 0 5px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #5cb85c;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+a {
+    color: #5cb85c;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+
+.messages-container {
+    width: 100%; /* Ensure it spans the full width */
+    position: fixed; /* Fixed positioning to keep it at the bottom */
+    left: 0;
+    bottom: 0; /* Align to the bottom */
+    text-align: center; /* Center the text/message inside */
+    background: transparent; /* Optional: Adjust background */
+    padding: 20px; /* Add some padding */
+    box-sizing: border-box; /* Ensure padding doesn't add to the width */
+    color: red;
+}
+
